@@ -1,18 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../img/Logo.png'
+import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarker } from "react-icons/fa";
+
 const Header = () => {
   return (
     <div className="container-fluid bg-white fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div className="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div className="col-lg-6 px-5 text-start">
-                <small><i className="fa fa-map-marker-alt me-2"></i>Rasulpur ,Gujarat - 384290</small>
-                <small className="ms-4"><i className="fa fa-envelope me-2"></i><Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link></small>
+                <small>
+                    <FaMapMarker className='me-2'/>
+                    Rasulpur ,Gujarat - 384290</small>
+                <small className="ms-4">
+                    <FaEnvelope className='me-2'/>
+                    <Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link>
+                    </small>
             </div>
             <div className="col-lg-6 px-5 text-end">
                 <span>Follow us:</span>
-                <Link className="text-body ms-3" to=""><i className="text-blue fab fa-facebook-f"></i></Link>
-                <Link className="text-body ms-3" to=""><i className="fab fa-instagram"></i></Link>
+                <Link className="text-body ms-3" to=""><FaFacebook className='me-2 fa-facebook-f'/></Link>
+                <Link className="text-body ms-3" to=""><FaInstagram className='me-2 fa-instagram'/></Link>
             </div>
         </div>
 

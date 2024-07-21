@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarker, FaPhone } from 'react-icons/fa'
+import { MdArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -11,24 +13,24 @@ const Footer = () => {
                 <p>Welcome to FarmStar, your premier source for organic produce and sustainable farming practices.
                     Join us in our mission to cultivate healthy communities through responsible agriculture.</p>
                 <div className="d-flex pt-2">
-                    <Link className="btn btn-square btn-outline-light rounded-circle me-1" to="#"><i
-                            className="fab fa-facebook-f"></i></Link>
-                    <Link className="btn btn-square btn-outline-light rounded-circle me-0" to="#"><i
-                            className="fab fa-instagram"></i></Link>
+                    <Link className="btn btn-square btn-outline-light rounded-circle me-1" to="#">
+                    <FaFacebook className='fa-facebook-f'/></Link>
+                    <Link className="btn btn-square btn-outline-light rounded-circle me-0" to="#">
+                    <FaInstagram className='fa-instagram'/></Link>
                 </div>
             </div>
             <div className="col-lg-3 col-md-6">
                 <h4 className="text-light mb-4">Address</h4>
-                <p><i className="fa fa-map-marker-alt me-3"></i>Rasulpur, Gujarat - 384290</p>
-                <p><i className="fa fa-phone-alt me-3"></i><Link to="tel:+919601510530">+91 96015 10530</Link></p>
-                <p><i className="fa fa-envelope me-3"></i><Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link></p>
+                <p><FaMapMarker className='me-1'/> Rasulpur, Gujarat - 384290</p>
+                <p><FaPhone className='me-1'/><Link to="tel:+919601510530">+91 96015 10530</Link></p>
+                <p><FaEnvelope className='me-1'/><Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link></p>
             </div>
             <div className="col-lg-3 col-md-6">
                 <h4 className="text-light mb-4">Quick Links</h4>
-                <Link className="btn btn-link" to="/">Home</Link>
-                <Link className="btn btn-link" to="/product">Products</Link>
-                <Link className="btn btn-link" to="/about">About Us</Link>
-                <Link className="btn btn-link" to="/contact">Contact Us</Link>
+                <Link className="btn btn-link" to="/"><MdArrowRight className='me-0'/> Home</Link>
+                <Link className="btn btn-link" to="/product"><MdArrowRight className='me-0'/> Products</Link>
+                <Link className="btn btn-link" to="/about"><MdArrowRight className='me-0'/> About Us</Link>
+                <Link className="btn btn-link" to="/contact"><MdArrowRight className='me-0'/> Contact Us</Link>
             </div>
             <div className="col-lg-3 col-md-6">
                 <h4 className="text-light mb-4">Newsletter</h4>

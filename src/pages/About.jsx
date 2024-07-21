@@ -2,6 +2,7 @@ import React from 'react'
 
 import aboutUs from '../img/about-1.jpeg'
 import { Link } from 'react-router-dom'
+import { FaCheck } from 'react-icons/fa'
 const About = () => {
   return (
     <>
@@ -28,9 +29,9 @@ const About = () => {
                 <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h1 className="display-5 mb-4">Premium Organic Honey, Ghee, Jaggery, Salt, and Brown Sugar</h1>
                     <p className="mb-4">Experience the richness of our organic products, meticulously sourced and crafted to perfection. Our honey, ghee, jaggery, pink or black salt, and brown sugar are all natural, ensuring you enjoy the best quality with every purchase.</p>
-                    <p><i className="fa fa-check text-primary me-3"></i>Pure and Authentic Ingredients</p>
-                    <p><i className="fa fa-check text-primary me-3"></i>Sourced from Certified Organic Farms</p>
-                    <p><i className="fa fa-check text-primary me-3"></i>Perfect for a Healthy Lifestyle</p>
+                    <p><FaCheck className='text-primary me-3'/>Pure and Authentic Ingredients</p>
+                    <p><FaCheck className='text-primary me-3'/>Sourced from Certified Organic Farms</p>
+                    <p><FaCheck className='text-primary me-3'/>Perfect for a Healthy Lifestyle</p>
                 </div>
                 
             </div>

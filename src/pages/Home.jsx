@@ -5,6 +5,7 @@ import icon1 from '../img/icon-1.png'
 import icon2 from '../img/icon-2.png'
 import icon3 from '../img/icon-3.png'
 import ProductCart from '../components/Products/ProductCart'
+import { FaCheck } from 'react-icons/fa'
 const Home = () => {
   return (
     <>
@@ -30,9 +31,9 @@ const Home = () => {
                     <p className="mb-4">Experience the richness of our organic products, meticulously sourced and crafted to
                         perfection. Our honey, ghee, jaggery, pink or black salt, and brown sugar are all natural,
                         ensuring you enjoy the best quality with every purchase.</p>
-                    <p><i className="fa fa-check text-primary me-3"></i>Pure and Authentic Ingredients</p>
-                    <p><i className="fa fa-check text-primary me-3"></i>Sourced from Certified Organic Farms</p>
-                    <p><i className="fa fa-check text-primary me-3"></i>Perfect for a Healthy Lifestyle</p>
+                    <p><FaCheck className='text-primary me-3'/>Pure and Authentic Ingredients</p>
+                    <p><FaCheck className='text-primary me-3'/>Sourced from Certified Organic Farms</p>
+                    <p><FaCheck className='text-primary me-3'/>Perfect for a Healthy Lifestyle</p>
                 </div>
 
             </div>
