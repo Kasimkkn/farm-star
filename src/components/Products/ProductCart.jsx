@@ -2,9 +2,9 @@ import React from 'react';
 import p1 from '../../img/honey-1.jpg';
 import p2 from '../../img/lithch-honey.jpg';
 import p3 from '../../img/wild-honey.jpg';
-import p4 from '../../img/Ghee.png';
-import p5 from '../../img/Sugar.png';
-import p6 from '../../img/Rock Salt.png';
+import p4 from '../../img/ghee.png';
+import p5 from '../../img/desi-khand.jpg';
+import p6 from '../../img/rock-salt.jpg';
 import p7 from '../../img/Jaggery.png';
 import { Link } from 'react-router-dom';
 
@@ -12,9 +12,9 @@ const products = [
     {name: 'Muliflora Honey', price: 1119.00, oldPrice: 2229.00, imgSrc: p1},
     {name: 'Litchi Honey', price: 1119.00, oldPrice: 2229.00, imgSrc: p2},
     {name: 'Wild Honey', price: 1119.00, oldPrice: 2229.00, imgSrc: p3},
-    {name: 'Fresh Ghee', price: 1119.00, oldPrice: 2229.00, imgSrc: p4},
-    {name: 'Fresh Sugar', price: 119.00, oldPrice: 229.00, imgSrc: p5},
-    {name: 'Fresh Salt', price: 219.00, oldPrice: 229.00, imgSrc: p6},
+    {name: 'Desi Ghee', price: 1119.00, oldPrice: 2229.00, imgSrc: p4},
+    {name: 'Desi Khand', price: 90.00, oldPrice: 129.00, imgSrc: p5},
+    {name: 'Rock Salt', price: 219.00, oldPrice: 229.00, imgSrc: p6},
     {name: 'Fresh Jaggery', price: 3419.00, oldPrice: 2495.00, imgSrc: p7}
 ];
 
@@ -38,8 +38,8 @@ const ProductCart = () => {
                         </div>
                         <div className="text-center p-4">
                             <Link className="d-block h5 mb-2" to="#">{product.name}</Link>
-                            <span className="text-primary me-1">{product.price}</span>
-                            <span className="text-body text-decoration-line-through">{product.oldPrice}</span>
+                            <span className="text-primary me-1">₹{product.price}</span>
+                            <span className="text-body text-decoration-line-through">₹{product.oldPrice}</span>
                         </div>
                         <div className="d-flex">
                             <small className="w-50 text-center bg-primary py-2">

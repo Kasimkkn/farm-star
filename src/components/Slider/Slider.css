@@ -1,5 +1,5 @@
 .carousel{
-    height: 85vh;
+    height: 100vh;
     margin-top: 120px;
     max-width: 100%;
     overflow: hidden;
@@ -14,6 +14,7 @@
 .carousel .list .item.active {
     opacity: 1;
     z-index: 1;
+    /* position: absolute; */
 }
 .carousel .list .item img{
     width: 100%;
@@ -22,10 +23,10 @@
 }
 .carousel .list .item .content{
     position: absolute;
-    top: 20%;
+    top: 5%;
     width: 1140px;
-    max-width: 80%;
-    left: 50%;
+    max-width: 100%;
+    left: 40%;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -36,14 +37,17 @@
 .carousel .list .item .topic{
     font-size: 4em;
     font-weight: bold;
-    color: var(--primary);
+    color: white;
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: var(--secondary);
+    color: white;
+    font-size: 3em;
 }
 .carousel .list .item .des{
-    width: 80%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.2rem;
     color: white;
 }
 .carousel .list .item .buttons{

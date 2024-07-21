@@ -10,7 +10,7 @@ const Header = () => {
             <div className="col-lg-6 px-5 text-start">
                 <small>
                     <FaMapMarker className='me-2'/>
-                    Rasulpur ,Gujarat - 384290</small>
+                    Rasulpur ,Patan ,Gujarat - 384290</small>
                 <small className="ms-4">
                     <FaEnvelope className='me-2'/>
                     <Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link>

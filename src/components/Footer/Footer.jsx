@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6">
                 <h4 className="text-light mb-4">Address</h4>
-                <p><FaMapMarker className='me-1'/> Rasulpur, Gujarat - 384290</p>
+                <p><FaMapMarker className='me-1'/>Rasulpur ,Patan ,Gujarat - 384290</p>
                 <p><FaPhone className='me-1'/><Link to="tel:+919601510530">+91 96015 10530</Link></p>
                 <p><FaEnvelope className='me-1'/><Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link></p>
             </div>
