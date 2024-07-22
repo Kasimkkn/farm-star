@@ -1,8 +1,9 @@
 import React, { useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { products } from '../../data/products';
 
 const ProductCart = ({ searchItem, sortItem }) => {
+    
     const filteredAndSortedProducts = useMemo(() => {
         let result = products.filter((product) =>
             product.name.toLowerCase().includes(searchItem.toLowerCase())
@@ -17,15 +18,14 @@ const ProductCart = ({ searchItem, sortItem }) => {
         return result;
     }, [searchItem, sortItem]);
 
+    const handleBuyNow = (product) => {}
     return (
         <div id="product-list" className="product-list row g-2">
             {filteredAndSortedProducts.map((product, index) => {
                 const whatsappMessage = `Hi, I'm interested in the product ${product.name} priced at ${product.price}.`;
                 const whatsappLink = `https://wa.me/+919601510530?text=${encodeURIComponent(whatsappMessage)}`;
-
                 return (
-                    <a
-                        href={`/product/${product.id}`}
+                    <div
                         className="product-item"
                         style={{ animationDelay: `${0.1 * (index + 1)}s` }}
                         key={index}>
@@ -46,7 +46,7 @@ const ProductCart = ({ searchItem, sortItem }) => {
                                 <Link className="buynow" to={`/product/${product.id}`}>Buy Now</Link>
                             </small>
                         </div>
-                    </a>
+                    </div>
                 );
             })}
         </div>
