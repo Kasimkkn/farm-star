@@ -288,12 +288,18 @@ img:hover{
 .footer .copyright a:hover {
   color: var(--primary);
 }
-
+.product-list{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
 .product-item {
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
+  width: 300px;
   padding: 10px;
   margin: 5px;
   text-align: center;
@@ -306,4 +312,35 @@ img:hover{
   width: 100%;
   height: 220px;
   object-fit: cover;
+}
+
+.product-search{
+  height: 50px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #c2c0c0;
+  padding-left: 10px;
+  outline: none;
+  text-transform: capitalize;
+}
+.product-sort{
+  height: 50px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #c2c0c0;
+  padding-left: 10px;
+  outline: none;
+  text-transform: capitalize;
+}
+.product-search:focus{
+  outline: none;
+}
+.product-sort:focus{
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%;
+  }
 }

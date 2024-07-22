@@ -76,14 +76,14 @@ const Home = () => {
 
     <div className="container-xxl py-5">
         <div className="container">
-            <div className="row g-0 gx-5 align-items-end">
+            <div className="">
                 <div className="col-lg-6">
-                    <div className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth:'500px'}}>
-                        <h1 className="display-5 mb-3 text-center">Our Products</h1>
+                    <div className="">
+                        <h1 className="mb-3">Our Products</h1>
                     </div>
                 </div>
-                <div className="container-fluid">
-                    <ProductCart/>
+                <div className="container">
+                    <ProductCart searchItem={''} sortItem={''}/>
                 </div>
             </div>
         </div>
