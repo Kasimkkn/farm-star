@@ -4,8 +4,6 @@
     height: 100vh;
     padding: 2rem;
 }
-
-
 .swiper_container {
     height: 100%;
     position: relative;
@@ -13,6 +11,7 @@
 
 .slide-content {
     position: relative;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .slide-content img {
@@ -29,20 +28,23 @@
 }
 
 .slide-text h3,
-.slide-text h4,
 .slide-text p {
     color: white;
     width: 50%;
     white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0;
     padding: 0;
 }
 
 .slide-text h3{
+    font-size: 3rem;
+    margin-bottom: 10px;
     letter-spacing: 4px;
-    line-height: 2.5rem;
+}
+.slide-text p{
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 @media (max-width: 500px) {

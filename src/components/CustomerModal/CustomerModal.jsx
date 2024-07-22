@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Modal, Form } from 'react-bootstrap';
-
+import qrCode from '../../img/qrcode.jpg';
 const CustomerModal = ({ itemDetails, showModal, setShowModal }) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -38,6 +38,7 @@ const CustomerModal = ({ itemDetails, showModal, setShowModal }) => {
                 <Modal.Title>Purchase Details</Modal.Title>
             </Modal.Header>
             <Modal.Body>
+                <div className='customer-details'>
                 <Form className='customer-form'>
                     <Form.Group controlId="formName">
                         <Form.Label>Name</Form.Label>
@@ -72,9 +73,12 @@ const CustomerModal = ({ itemDetails, showModal, setShowModal }) => {
                         <Form.Control type="text" placeholder="Enter your country" value={country} onChange={(e) => setCountry(e.target.value)} />
                     </Form.Group>
                 </Form>
+                <div className='qr_image'>
+                <img src={qrCode} alt="QR Code"/>
+                </div>
+                </div>
             </Modal.Body>
             <Modal.Footer>
-                {/* <QRCode value={`https://wa.me/+919601510530?text=${encodeURIComponent(whatsappMessage)}`} /> */}
                 <Button variant="primary" onClick={handleSubmit}>
                     Submit and Pay
                 </Button>
