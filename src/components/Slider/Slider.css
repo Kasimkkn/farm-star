@@ -41,8 +41,10 @@
     font-size: 3rem;
     margin-bottom: 10px;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 .slide-text p{
+    text-transform: capitalize;
     font-size: 1.2rem;
     line-height: 2rem;
 }
