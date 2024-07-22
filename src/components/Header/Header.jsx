@@ -5,7 +5,7 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarker } from "react-icons/fa
 
 const Header = () => {
   return (
-    <div className="container-fluid bg-white fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div className="container-fluid bg-white fixed-top px-0">
         <div className="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div className="col-lg-6 px-5 text-start">
                 <small>
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
         </div>
 
-        <nav className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <nav className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
             <Link to="/" className="navbar-brand ms-4 ms-lg-0" style={{width: '170px'}}>
                 <img src={logo} alt="Logo" className="w-100 h-100 object-fit-cover" />
             </Link>

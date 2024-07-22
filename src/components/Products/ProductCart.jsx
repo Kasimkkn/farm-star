@@ -56,7 +56,7 @@ const ProductCart = ({ searchItem, sortItem }) => {
                         </div>
                         <div className="d-flex">
                             <small className="w-50 text-center bg-primary py-2">
-                                <Link className="text-white contact-us" to={whatsappLink} target="_blank" rel="noopener noreferrer">Contact us</Link>
+                                <Link className="link-primary" to={whatsappLink} target="_blank" rel="noopener noreferrer">Contact us</Link>
                             </small>
                             <small className="w-50 text-center py-2">
                                 <Link className="text-body" to="#">Buy Now</Link>
