@@ -1,11 +1,12 @@
 import React from 'react'
-import Slider from '../components/Slider/Slider'
+// import Slider from '../components/Slider/Slider'
 import homebg from '../img/home-bg.jpg'
 import icon1 from '../img/icon-1.png'
 import icon2 from '../img/icon-2.png'
 import icon3 from '../img/icon-3.png'
 import ProductCart from '../components/Products/ProductCart'
 import { FaCheck } from 'react-icons/fa'
+import Slider from '../components/Slider-1/Slider'
 const Home = () => {
   return (
     <>
