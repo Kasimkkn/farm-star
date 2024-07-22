@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../img/Logo.png'
-import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarker } from "react-icons/fa";
-
+import { FaCartPlus, FaEnvelope, FaFacebook, FaInstagram, FaMapMarker } from "react-icons/fa";
+import 'bootstrap/dist/js/bootstrap.bundle'
 const Header = () => {
   return (
     <div className="container-fluid bg-white fixed-top px-0">
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
         </div>
 
-        <nav className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
+        <nav className="navbar navbar-expand-lg navbar-light p-2 px-lg-5">
             <Link to="/" className="navbar-brand ms-4 ms-lg-0" style={{width: '170px'}}>
                 <img src={logo} alt="Logo" className="w-100 h-100 object-fit-cover" />
             </Link>
@@ -37,6 +37,7 @@ const Header = () => {
                     <Link to="/product" className="nav-item nav-link">Products</Link>
                     <Link to="/about" className="nav-item nav-link">About Us</Link>
                     <Link to="/contact" className="nav-item nav-link">Contact Us</Link>
+                    {/* <Link to="/cart" className="nav-item nav-link"><FaCartPlus/></Link> */}
                 </div>
             </div>
         </nav>
