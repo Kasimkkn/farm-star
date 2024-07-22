@@ -23,11 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-
-/src/server.js
-/src/stripe.js
-/src/indexedDb.js
-/src/components/CartItems.jsx
-/src/components/StripeCheckoutForm.jsx
-/src/pages/Cart.jsx
-/src/pages/Chekout.jsx
