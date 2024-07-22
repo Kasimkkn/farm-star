@@ -2,7 +2,7 @@ import React from 'react';
 import p1 from '../../img/honey-1.jpg';
 import p2 from '../../img/lithch-honey.jpg';
 import p3 from '../../img/wild-honey.jpg';
-import p4 from '../../img/ghee.png';
+import p4 from '../../img/Ghee.png';
 import p5 from '../../img/desi-khand.jpg';
 import p6 from '../../img/rock-salt.jpg';
 import p7 from '../../img/Jaggery.png';
