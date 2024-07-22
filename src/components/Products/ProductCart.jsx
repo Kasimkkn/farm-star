@@ -43,7 +43,7 @@ const ProductCart = ({ searchItem, sortItem }) => {
                                 <Link className="link-primary" to={whatsappLink} target="_blank" rel="noopener noreferrer">Contact us</Link>
                             </small>
                             <small className="w-50 text-center py-2">
-                                <Link className="text-body" to={`/product/${product.id}`}>Buy Now</Link>
+                                <Link className="buynow" to={`/product/${product.id}`}>Buy Now</Link>
                             </small>
                         </div>
                     </a>

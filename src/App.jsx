@@ -6,9 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Product from './pages/Product'
 import { Route, Routes } from 'react-router-dom'
-import Cart from './pages/Cart'
 import { Toaster } from 'react-hot-toast'
-import Chekout from './pages/Chekout'
 import ProductDetails from './pages/ProductDetails'
 
 const App = () => {
@@ -21,8 +19,6 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/product/:id" element={<ProductDetails />} />
-            {/* <Route path="/cart" element={<Cart />} /> */}
-            {/* <Route path="/checkout" element={<Chekout />} /> */}
           </Routes>
       <Footer/>
       <Toaster position='top-center' />

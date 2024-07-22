@@ -363,21 +363,9 @@ img:hover{
   margin: 15px 0;
   width: 70%;
 }
-
-.quantity .buynow {
-  background: var(--primary);
-  border-radius: 4px;
-  padding: 10px 37px;
-  border: none;
-  color: white;
-  font-weight: 600;
+.btn-primary{
+  border-radius: 5px !important;
 }
-
-button:hover {
-  background: #ff4242;
-  transition: ease-in 0.4s;
-}
-
 .delivery {
   display: flex;
   justify-content: space-between;
@@ -415,4 +403,20 @@ hr {
   hr{
     width: 100%;
   }
+}
+
+.modal-dialog {
+  max-width: 80% !important;
+}
+.customer-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.btn-close:hover{
+  background: black !important;
+  border-radius: 50%;
+}
+.form-control{
+  border-radius: 5px;
 }
