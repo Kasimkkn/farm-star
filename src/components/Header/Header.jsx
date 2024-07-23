@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="container-fluid bg-white fixed-top px-0">
         <div className="top-bar row gx-0 align-items-center d-none d-lg-flex">
-            <div className="col-lg-6 px-5 text-start">
+            <div className="col-lg-9 px-5 text-start">
                 <small style={{width: '100%',fontSize:'17px'}}>
                     <FaMapMarker className='me-2'/>
                     Rasulpur ,Sidhpur ,Patan ,Gujarat - 384290</small>
@@ -16,14 +16,14 @@ const Header = () => {
                     <Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link>
                     </small>
             </div>
-            <div className="col-lg-6 px-5 text-end">
+            <div className="col-lg-3 px-5 text-end">
                 <span>Follow us:</span>
                 <Link className="text-body ms-3" to=""><FaFacebook className='me-2 fa-facebook-f'/></Link>
                 <Link className="text-body ms-3" to=""><FaInstagram className='me-2 fa-instagram'/></Link>
             </div>
         </div>
 
-        <nav className="navbar navbar-light p-2 px-lg-5">
+        <nav className="navbar navbar-expand-lg navbar-light p-2 px-lg-5">
             <Link to="/" className="navbar-brand ms-4 ms-lg-0" style={{width: '200px'}}>
                 <img src={logo} alt="Logo" className="w-100 h-100 object-fit-cover" />
             </Link>
