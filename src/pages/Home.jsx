@@ -10,29 +10,15 @@ const Home = () => {
     return (
         <>
             <Slider />
-            <div className="container-xxl py-5">
+            <div className="container-xxl py-2">
                 <div className="container">
-                    <div className="row g-5 align-items-center">
-                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div className="about-img position-relative overflow-hidden p-5 pe-0">
-                                <img className="img-fluid w-100 h-100" style={{ borderRadius: '10px' }} src={homebg} alt="Home bg" />
-                            </div>
+                    <div className="">
+                        <div className='natural-text'>
+                            <h1>100% Natural</h1>
                         </div>
-                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <h1 className="mb-4 home-h1">
-                                <span style={{ color: 'var(--primary)', display: 'block' }}>Premium Natural Organic</span>
-                                <span style={{ color: 'black' }}>Honey, Ghee, Jaggery, Salt, </span>
-                                <span style={{ color: 'var(--primary)' }}> & </span>
-                                <span style={{ color: 'black' }}>Brown Sugar</span>
-                            </h1>
-                            <p className="mb-4">Experience the richness of our organic products, meticulously sourced and crafted to
-                                perfection. Our honey, ghee, jaggery, pink or black salt, and brown sugar are all natural,
-                                ensuring you enjoy the best quality with every purchase.</p>
-                            <p><FaCheck className='text-primary me-3' />Pure and Authentic Ingredients</p>
-                            <p><FaCheck className='text-primary me-3' />Sourced from Certified Organic Farms</p>
-                            <p><FaCheck className='text-primary me-3' />Perfect for a Healthy Lifestyle</p>
+                        <div className="container">
+                            <ProductCart searchItem={''} sortItem={''} />
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -74,18 +60,33 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="container-xxl py-2">
+            <div className="container-xxl py-5">
                 <div className="container">
-                    <div className="">
-                        <div className='natural-text'>
-                            <h1>100% Natural</h1>
+                    <div className="row g-5 align-items-center">
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div className="about-img position-relative overflow-hidden p-5 pe-0">
+                                <img className="img-fluid w-100 h-100" style={{ borderRadius: '10px' }} src={homebg} alt="Home bg" />
+                            </div>
                         </div>
-                        <div className="container">
-                            <ProductCart searchItem={''} sortItem={''} />
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <h1 className="mb-4 home-h1">
+                                <span style={{ color: 'var(--primary)', display: 'block' }}>Premium Natural Organic</span>
+                                <span style={{ color: 'black' }}>Honey, Ghee, Jaggery, Salt, </span>
+                                <span style={{ color: 'var(--primary)' }}> & </span>
+                                <span style={{ color: 'black' }}>Brown Sugar</span>
+                            </h1>
+                            <p className="mb-4">Experience the richness of our organic products, meticulously sourced and crafted to
+                                perfection. Our honey, ghee, jaggery, pink or black salt, and brown sugar are all natural,
+                                ensuring you enjoy the best quality with every purchase.</p>
+                            <p><FaCheck className='text-primary me-3' />Pure and Authentic Ingredients</p>
+                            <p><FaCheck className='text-primary me-3' />Sourced from Certified Organic Farms</p>
+                            <p><FaCheck className='text-primary me-3' />Perfect for a Healthy Lifestyle</p>
                         </div>
+
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

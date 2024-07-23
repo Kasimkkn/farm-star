@@ -45,9 +45,9 @@ img:hover{
   border-radius: 10px;
 }
 
-/* .navbar{
-  background-color: #96f0b8;
-} */
+.navbar{
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+}
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
   border: 1px solid #eee !important;
   box-shadow: none !important;
@@ -477,7 +477,7 @@ hr {
 .natural-text h1 {
   display: inline-block;
   color: var(--primary);
-  font-size: 120px;
+  font-size: 90px;
   text-transform: uppercase;
   font-weight: 600;
   animation: marquee 10s linear infinite;
@@ -487,6 +487,7 @@ hr {
   color: var(--primary);
   font-size: 2rem;
   font-family: Lato;
+  font-style: italic;
   text-transform: uppercase;
   line-height: 150%;
   letter-spacing: 1px;
