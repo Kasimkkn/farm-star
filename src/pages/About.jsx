@@ -39,15 +39,15 @@ const About = () => {
     </div>
 
 
-    <div className="container-fluid bg-primary bg-icon mt-5 py-6">
+    <div className="container-fluid bg-white bg-icon mt-5 py-6">
         <div className="container">
             <div className="row g-5 align-items-center">
                 <div className="col-md-7 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 className="display-5 text-white mb-3">Visit Our Farm</h1>
-                    <p className="text-white mb-0">Experience the beauty and tranquility of our farm. See firsthand how we grow our organic produce and learn about our sustainable farming practices. Our farm is open for visits, and we welcome you to join us for a tour and taste the freshness of our produce.</p>
+                    <h1 className="display-5 text-primary mb-3">Visit Our Farm</h1>
+                    <p className="text-muted mb-0">Experience the beauty and tranquility of our farm. See firsthand how we grow our organic produce and learn about our sustainable farming practices. Our farm is open for visits, and we welcome you to join us for a tour and taste the freshness of our produce.</p>
                 </div>
                 <div className="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <a className="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="visit.html">Visit Now</a>
+                    <a className="btn btn-lg btn-primary rounded-pill py-3 px-5" href="visit.html">Visit Now</a>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ import slider1 from '../../img/slider-hon.jpg';
 import slider2 from '../../img/slider-ghee.png';
 import slider3 from '../../img/slider-jag.jpg';
 import slider4 from '../../img/slider-salt.jpg';
-import { EffectFade, Autoplay } from 'swiper/modules';
+import { EffectFade, Autoplay,Pagination,Navigation } from 'swiper/modules';
 import Typewriter from '../TypeWriter';
 
 const Slider = () => {
@@ -35,7 +35,7 @@ const Slider = () => {
                 loop={true}
                 slidesPerView={1}
                 speed={2000}
-                modules={[EffectFade, Autoplay]}
+                modules={[EffectFade, Autoplay, Pagination, Navigation]}
                 className="swiper_container"
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             >

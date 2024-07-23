@@ -21,9 +21,9 @@ const Home = () => {
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <h1 className="mb-4 home-h1">
                                 <span style={{ color: 'var(--primary)', display: 'block' }}>Premium Natural Organic</span>
-                                <span style={{ color: 'black'}}>Honey, Ghee, Jaggery, Salt, </span>
+                                <span style={{ color: 'black' }}>Honey, Ghee, Jaggery, Salt, </span>
                                 <span style={{ color: 'var(--primary)' }}> & </span>
-                                <span style={{ color: 'black'}}>Brown Sugar</span>
+                                <span style={{ color: 'black' }}>Brown Sugar</span>
                             </h1>
                             <p className="mb-4">Experience the richness of our organic products, meticulously sourced and crafted to
                                 perfection. Our honey, ghee, jaggery, pink or black salt, and brown sugar are all natural,
@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="container-fluid bg-light bg-icon my-5 py-6">
+            <div className="container-fluid bg-light bg-icon my-2 py-6">
                 <div className="container">
                     <div className="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
                         style={{ maxWidth: '500px' }}>
@@ -74,13 +74,11 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="container-xxl py-5">
+            <div className="container-xxl py-2">
                 <div className="container">
                     <div className="">
-                        <div className="col-lg-6">
-                            <div className="">
-                                <h1 className="mb-3">Our Products</h1>
-                            </div>
+                        <div className='natural-text'>
+                            <h1>100% Natural</h1>
                         </div>
                         <div className="container">
                             <ProductCart searchItem={''} sortItem={''} />

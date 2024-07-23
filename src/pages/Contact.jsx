@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Contact = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const whatsappMessage = `Hi, my name is ${name} 
+        email: ${email}.
+        subject: ${subject}
+        message: ${message}.`;
+        const whatsappLink = `https://wa.me/+919601510530?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappLink, '_blank');
+    }
   return (
     <>
       <div className="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
@@ -32,30 +48,36 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="row g-3">
                             <div className="col-md-6">
                                 <div className="form-floating">
-                                    <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} name='name' className="form-control" id="name" placeholder="Your Name" />
                                     <label htmlFor="name">Your Name</label>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-floating">
-                                    <input type="email" className="form-control" id="email" placeholder="Your Email"/>
+                                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} name='email' className="form-control" id="email" placeholder="Your Email"/>
                                     <label htmlFor="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div className='col-12'>
+                                <div className="form-floating">
+                                    <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} name='phone' className="form-control" id="phone" placeholder="Your Phone"/>
+                                    <label htmlFor="phone">Your Phone</label>
                                 </div>
                             </div>
                             <div className="col-12">
                                 <div className="form-floating">
-                                    <input type="text" className="form-control" id="subject" placeholder="Subject"/>
+                                    <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} name='subject' className="form-control" id="subject" placeholder="Subject"/>
                                     <label htmlFor="subject">Subject</label>
                                 </div>
                             </div>
                             <div className="col-12">
                                 <div className="form-floating">
-                                    <textarea className="form-control" placeholder="Leave a message here" id="message"
-                                        style={{height: '200px'}}></textarea>
+                                    <textarea name='message' value={message} onChange={(e) => setMessage(e.target.value)} className="form-control" placeholder="Leave a message here" id="message"
+                                        style={{height: '150px'}}></textarea>
                                     <label htmlFor="message">Message</label>
                                 </div>
                             </div>

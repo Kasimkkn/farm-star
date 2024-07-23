@@ -8,8 +8,8 @@ const Footer = () => {
     <div className="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <div className="container py-5">
         <div className="row g-5">
-            <div className="col-lg-3 col-md-6">
-                <h1 className="fw-bold text-primary mb-4"><span className="text-secondary">Farm</span>Star</h1>
+            <div className="col-lg-4 col-md-6">
+                <h1 className="fw-bold text-light-primary mb-4"><span className="text-light-primary">Farm</span>Star</h1>
                 <p>Welcome to FarmStar, your premier source for organic produce and sustainable farming practices.
                     Join us in our mission to cultivate healthy communities through responsible agriculture.</p>
                 <div className="d-flex pt-2">
@@ -19,29 +19,18 @@ const Footer = () => {
                     <FaInstagram className='fa-instagram'/></Link>
                 </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
                 <h4 className="text-light mb-4">Address</h4>
                 <p><FaMapMarker className='me-1'/>Rasulpur ,Patan ,Gujarat - 384290</p>
                 <p><FaPhone className='me-1'/><Link to="tel:+919601510530">+91 96015 10530</Link></p>
                 <p><FaEnvelope className='me-1'/><Link to="mailto:farmstar530@gmail.com">farmstar530@gmail.com</Link></p>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
                 <h4 className="text-light mb-4">Quick Links</h4>
                 <Link className="btn btn-link" to="/"><MdArrowRight className='me-0'/> Home</Link>
                 <Link className="btn btn-link" to="/product"><MdArrowRight className='me-0'/> Products</Link>
                 <Link className="btn btn-link" to="/about"><MdArrowRight className='me-0'/> About Us</Link>
                 <Link className="btn btn-link" to="/contact"><MdArrowRight className='me-0'/> Contact Us</Link>
-            </div>
-            <div className="col-lg-3 col-md-6">
-                <h4 className="text-light mb-4">Newsletter</h4>
-                <p>Stay informed with the latest updates and promotions. Subscribe to our newsletter for exclusive
-                    offers and farming tips.</p>
-                <div className="position-relative mx-auto" style={{maxWidth: '400px'}}>
-                    <input className="rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                    <button type="button"
-                        className="btn btn-primary py-2 rounded-pill position-absolute top-0 end-0 mt-2 me-2">Sign
-                        Up</button>
-                </div>
             </div>
         </div>
     </div>

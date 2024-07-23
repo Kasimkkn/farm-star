@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../img/Logo.png'
-import { FaCartPlus, FaEnvelope, FaFacebook, FaInstagram, FaMapMarker } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarker } from "react-icons/fa";
 import 'bootstrap/dist/js/bootstrap.bundle'
 const Header = () => {
   return (
@@ -27,6 +27,7 @@ const Header = () => {
             <Link to="/" className="navbar-brand ms-4 ms-lg-0" style={{width: '170px'}}>
                 <img src={logo} alt="Logo" className="w-100 h-100 object-fit-cover" />
             </Link>
+            <h1 className='pure-for-sure'>Pure For Sure</h1>
             <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
                 <span className="navbar-toggler-icon"></span>
@@ -37,7 +38,6 @@ const Header = () => {
                     <Link to="/product" className="nav-item nav-link">Products</Link>
                     <Link to="/about" className="nav-item nav-link">About Us</Link>
                     <Link to="/contact" className="nav-item nav-link">Contact Us</Link>
-                    {/* <Link to="/cart" className="nav-item nav-link"><FaCartPlus/></Link> */}
                 </div>
             </div>
         </nav>

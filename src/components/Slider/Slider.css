@@ -66,6 +66,7 @@
     .swiper-slide img {
         width: 28rem !important;
         height: 36rem !important;
+        border-radius: 0px !important;
     }
     .slide-text{
         width: 100%;
