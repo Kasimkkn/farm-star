@@ -22,7 +22,7 @@ const Slider = () => {
     ];
 
     return (
-        <div className="container-swipe">
+        <div className="container-swipe bg-white">
             <Swiper
                 autoplay={{
                     delay: 4000,
