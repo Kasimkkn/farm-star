@@ -23,7 +23,7 @@ const Header = () => {
             </div>
         </div>
 
-        <nav className="navbar navbar-expand-lg navbar-light p-2 px-lg-5">
+        <nav className="navbar navbar-light p-2 px-lg-5">
             <Link to="/" className="navbar-brand ms-4 ms-lg-0" style={{width: '170px'}}>
                 <img src={logo} alt="Logo" className="w-100 h-100 object-fit-cover" />
             </Link>
@@ -33,7 +33,7 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
-                <div className="navbar-nav ms-auto p-4 p-lg-0">
+                <div className="navbar-nav ms-auto p-4 p-lg-0 mx-4">
                     <Link to="/" className="nav-item nav-link active">Home</Link>
                     <Link to="/product" className="nav-item nav-link">Products</Link>
                     <Link to="/about" className="nav-item nav-link">About Us</Link>
