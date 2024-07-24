@@ -12,14 +12,13 @@ const Home = () => {
             <Slider />
             <div className="container-xxl py-2">
                 <div className="container">
-                    <div className="">
                         <div className='natural-text'>
                             <h1>100% Natural</h1>
                         </div>
                         <div className="container">
                             <ProductCart searchItem={''} sortItem={''} />
                         </div>
-                    </div>
+                    
                 </div>
             </div>
 
