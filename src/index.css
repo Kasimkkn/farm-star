@@ -10,7 +10,10 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: #96f0b8;
+  background: linear-gradient(to right, #a1f5c1, #934545bd);
+  /* background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 a {
@@ -513,15 +516,14 @@ hr {
 
 .natural-text {
   overflow: hidden;
-  background-color: #96f0b8;
 }
 
 .natural-text h1 {
-  color: var(--primary);
+  color: var(--light);
   font-size: 65px;
   text-transform: uppercase;
   font-weight: 600;
-  animation: marquee 5s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 .pure-for-sure {
@@ -552,4 +554,39 @@ hr {
   z-index: 100000;
   height: 3rem;
   overflow: hidden;
+}
+
+
+.gallery {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  transform-style: preserve-3d;
+  animation: rotate 35s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: perspective(1200px) rotateY(0deg);
+  }
+
+  to {
+    transform: perspective(1200px) rotateY(360deg);
+  }
+}
+
+.gallery span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(440px);
+}
+
+.gallery span img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

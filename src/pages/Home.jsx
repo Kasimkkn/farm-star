@@ -75,10 +75,8 @@ const Home = () => {
                         </div>
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <h1 className="mb-4 home-h1">
-                                <span style={{ color: 'var(--primary)', display: 'block' }}>Premium Natural Organic</span>
-                                <span style={{ color: 'black' }}>Honey, Ghee, Jaggery, Salt, </span>
-                                <span style={{ color: 'var(--primary)' }}> & </span>
-                                <span style={{ color: 'black' }}>Brown Sugar</span>
+                                <span style={{ color: 'var(--primary)', display: 'block' }}>FarmStar Oragnic</span>
+                                <span style={{ color: 'black' }}>Honey, Ghee, Jaggery, Salt, Brown Sugar</span>
                             </h1>
                             <p className="mb-4">Experience the richness of our organic products, meticulously sourced and crafted to
                                 perfection. Our honey, ghee, jaggery, pink or black salt, and brown sugar are all natural,
