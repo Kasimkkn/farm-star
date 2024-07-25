@@ -3,22 +3,28 @@ import homebg from '../img/home-bg.jpg'
 import icon1 from '../img/icon-1.png'
 import icon2 from '../img/icon-2.png'
 import icon3 from '../img/icon-3.png'
+import whatsapp from '../img/WhatsApp.svg'
 import ProductCart from '../components/Products/ProductCart'
 import { FaCheck } from 'react-icons/fa'
 import Slider from '../components/Slider/Slider'
 const Home = () => {
+    const handleWhatClick = () => {
+        const whatsappMessage = `Hi, I'm interested in the product.`;
+        const whatsappLink = `https://wa.me/+919601510530?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappLink, '_blank');
+    }
     return (
         <>
             <Slider />
             <div className="container-xxl py-2">
                 <div className="container">
-                        <div className='natural-text'>
-                            <h1>100% Natural</h1>
-                        </div>
-                        <div className="container">
-                            <ProductCart searchItem={''} sortItem={''} />
-                        </div>
-                    
+                    <div className='natural-text'>
+                        <h1>100% Natural</h1>
+                    </div>
+                    <div className="container">
+                        <ProductCart searchItem={''} sortItem={''} />
+                    </div>
+
                 </div>
             </div>
 
@@ -85,7 +91,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
+            <img onClick={handleWhatClick} src={whatsapp} alt="whatsapp" className='whatsapp-icon' />
         </>
     )
 }
