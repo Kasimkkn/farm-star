@@ -25,7 +25,7 @@ const About = () => {
 
             <div className="container-xxl py-5">
                 <div className="container">
-                    <div className="row g-5 align-items-center justify-content-center" style={{ height: '50vh' }}>
+                    <div className="row g-5 align-items-center justify-content-center overflow-hidden" style={{ height: '50vh' }}>
                         <div className="gallery">
                             {/* {
                                 products.map((product) => {

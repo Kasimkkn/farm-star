@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&family=Oswald:wght@200..700&display=swap');
 
 :root {
   --primary: #159947;
@@ -529,11 +530,11 @@ hr {
 .pure-for-sure {
   color: var(--primary);
   font-size: 2rem;
-  font-family: Lato;
-  font-style: italic;
+  font-family: "Arizonia", cursive;
   text-transform: uppercase;
   line-height: 150%;
-  letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 5px;
 }
 
 @media (max-width: 768px) {
@@ -550,9 +551,9 @@ hr {
   position: fixed;
   bottom: 0.6rem;
   right: 0.6rem;
-  width: 3rem;
+  width: 5rem;
   z-index: 100000;
-  height: 3rem;
+  height: 4rem;
   overflow: hidden;
 }
 
@@ -589,4 +590,23 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width:600px) {
+  .gallery {
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; */
+  }
+
+  .gallery span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(240px);
+  }
+
+  .whatsapp-icon {
+    right: 0.2rem;
+    bottom: 0rem;
+    width: 2.5rem;
+    height: 3rem;
+  }
 }

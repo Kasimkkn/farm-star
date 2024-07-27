@@ -4,6 +4,7 @@
     height: 80vh;
     padding: 1rem 2rem;
 }
+
 .swiper_container {
     height: 100%;
     position: relative;
@@ -38,13 +39,14 @@
     transition: all 0.5s ease-in-out;
 }
 
-.slide-text h3{
+.slide-text h3 {
     font-size: 3rem;
     margin-bottom: 10px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.slide-text p{
+
+.slide-text p {
     text-transform: capitalize;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -59,21 +61,24 @@
         width: 28rem !important;
         height: 36rem !important;
     }
-    .swiper-fade .swiper-slide{
+
+    .swiper-fade .swiper-slide {
         opacity: 1 !important;
     }
 
     .swiper-slide img {
         width: 28rem !important;
-        height: 36rem !important;
+        height: 30rem !important;
         object-fit: fill !important;
         border-radius: 0px !important;
     }
-    .slide-text{
+
+    .slide-text {
         width: 100%;
         top: 0rem;
         left: 0rem;
     }
+
     .slide-text h3 {
         width: 100%;
         font-size: 1.3rem;
@@ -121,6 +126,7 @@
         margin-top: 60px;
         padding: 1rem;
     }
+
     .slider-controler .swiper-button-next {
         left: 80% !important;
         transform: translateX(-80%) !important;
