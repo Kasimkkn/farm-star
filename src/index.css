@@ -243,7 +243,7 @@ img:hover {
 }
 
 .product-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .product-item small a:hover {
@@ -317,20 +317,20 @@ img:hover {
 }
 
 .product-search {
-  height: 50px;
+  height: 56px;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #c2c0c0;
+  border: none;
   padding-left: 10px;
   outline: none;
   text-transform: capitalize;
 }
 
 .product-sort {
-  height: 50px;
+  height: 54px;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #c2c0c0;
+  border: none;
   padding-left: 10px;
   outline: none;
   text-transform: capitalize;
@@ -560,7 +560,7 @@ hr {
 
 .gallery {
   position: relative;
-  width: 350px;
+  width: 280px;
   height: 280px;
   transform-style: preserve-3d;
   animation: rotate 35s linear infinite;
@@ -582,7 +582,7 @@ hr {
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(440px);
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(370px);
 }
 
 .gallery span img {
