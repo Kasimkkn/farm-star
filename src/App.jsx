@@ -7,20 +7,20 @@ import Contact from './pages/Contact'
 import Product from './pages/Product'
 import { Route, Routes } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
-import ProductDetails from './pages/ProductDetails'
+
 
 const App = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/product/:id" element={<ProductDetails />} />
-          </Routes>
-      <Footer/>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
+      <Footer />
       <Toaster position='top-center' />
     </>
   )

@@ -15,12 +15,8 @@ const Slider = () => {
     const sliderItems = [
         { img: slider1 },
         { img: slider2 },
-        {
-            img: slider3
-        },
-        {
-            img: slider4
-        }
+        { img: slider3 },
+        { img: slider4 }
     ];
 
     return (

@@ -46,6 +46,12 @@ img:hover {
   transition: .5s;
 }
 
+.buynow:hover {
+  color: var(--primary) !important;
+  transform: scale(1.2);
+  transition: .5s;
+}
+
 .link-primary:hover {
   color: var(--dark) !important;
 }

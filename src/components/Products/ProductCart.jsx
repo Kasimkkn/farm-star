@@ -1,9 +1,12 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../../data/products';
-
+import CustomerModal from '../CustomerModal/CustomerModal';
 const ProductCart = ({ searchItem, sortItem }) => {
-    
+    const [showModal, setShowModal] = useState(false);
+    const handleBuyNow = () => {
+        setShowModal(true);
+    };
     const filteredAndSortedProducts = useMemo(() => {
         let result = products.filter((product) =>
             product.name.toLowerCase().includes(searchItem.toLowerCase())
@@ -18,7 +21,6 @@ const ProductCart = ({ searchItem, sortItem }) => {
         return result;
     }, [searchItem, sortItem]);
 
-    const handleBuyNow = (product) => {}
     return (
         <div id="product-list" className="product-list row g-2">
             {filteredAndSortedProducts.map((product, index) => {
@@ -43,9 +45,11 @@ const ProductCart = ({ searchItem, sortItem }) => {
                                 <Link className="link-primary" to={whatsappLink} target="_blank" rel="noopener noreferrer">Contact us</Link>
                             </small>
                             <small className="w-50 text-center py-2">
-                                <Link className="buynow" to={`/product/${product.id}`}>Buy Now</Link>
+                                <button onClick={handleBuyNow} className="border-0 bg-white buynow" >Buy Now</button>
                             </small>
                         </div>
+                        <CustomerModal showModal={showModal} itemDetails={product} setShowModal={setShowModal} />
+
                     </div>
                 );
             })}
