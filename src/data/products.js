@@ -8,9 +8,9 @@ import p7 from '../img/Jaggery.png';
 
 export const products = [
     { id: 1, name: 'Muliflora Honey 500gm', price: 349.00, oldPrice: 399.00, imgSrc: p1, quantity: 1 },
-    { id: 2, name: 'Muliflora Honey 250gm', price: 249.00, oldPrice: 229.00, imgSrc: p1, quantity: 1 },
+    { id: 2, name: 'Muliflora Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p1, quantity: 1 },
     { id: 3, name: 'Litchi Honey 500gm', price: 349.00, oldPrice: 399.00, imgSrc: p2, quantity: 1 },
-    { id: 4, name: 'Litchi Honey 250gm', price: 249.00, oldPrice: 229.00, imgSrc: p2, quantity: 1 },
+    { id: 4, name: 'Litchi Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p2, quantity: 1 },
     { id: 5, name: 'Wild Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p3, quantity: 1 },
     { id: 6, name: 'Desi Ghee 500gm', price: 849.00, oldPrice: 899.00, imgSrc: p4, quantity: 1 },
     { id: 6, name: 'Desi Ghee 1ltr', price: 1699.00, oldPrice: 1799.00, imgSrc: p4, quantity: 1 },
