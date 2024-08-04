@@ -2,11 +2,18 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../../data/products';
 import CustomerModal from '../CustomerModal/CustomerModal';
+
 const ProductCart = ({ searchItem, sortItem }) => {
-    const [showModal, setShowModal] = useState(false);
-    const handleBuyNow = () => {
-        setShowModal(true);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
+    const handleBuyNow = (product) => {
+        setSelectedProduct(product);
     };
+
+    const handleCloseModal = () => {
+        setSelectedProduct(null);
+    };
+
     const filteredAndSortedProducts = useMemo(() => {
         let result = products.filter((product) =>
             product.name.toLowerCase().includes(searchItem.toLowerCase())
@@ -24,11 +31,11 @@ const ProductCart = ({ searchItem, sortItem }) => {
     return (
         <div id="product-list" className="product-list row g-2">
             {filteredAndSortedProducts.map((product, index) => {
-                const whatsappMessage = `Hi, I'm interested in the product ${product.name} priced at ${product.price}.`;
+                const whatsappMessage = `Hi, I'm interested in the product ${product.name} priced at ₹${product.price}.`;
                 const whatsappLink = `https://wa.me/+919601510530?text=${encodeURIComponent(whatsappMessage)}`;
                 return (
                     <div
-                        className="product-item"
+                        className="product-item col-12 col-sm-6 col-lg-4"
                         style={{ animationDelay: `${0.1 * (index + 1)}s` }}
                         key={index}>
                         <div className="position-relative bg-light overflow-hidden">
@@ -42,14 +49,16 @@ const ProductCart = ({ searchItem, sortItem }) => {
                         </div>
                         <div className="d-flex">
                             <small className="w-50 text-center bg-primary py-2">
-                                <Link className="link-primary" to={whatsappLink} target="_blank" rel="noopener noreferrer">Contact us</Link>
+                                <Link className="link-primary text-white" to={whatsappLink} target="_blank" rel="noopener noreferrer">Contact us</Link>
                             </small>
                             <small className="w-50 text-center py-2">
-                                <button onClick={handleBuyNow} className="border-0 bg-white buynow" >Buy Now</button>
+                                <button onClick={() => handleBuyNow(product)} className="border-0 bg-white buynow">Buy Now</button>
                             </small>
                         </div>
-                        <CustomerModal showModal={showModal} itemDetails={product} setShowModal={setShowModal} />
 
+                        {selectedProduct && selectedProduct.name === product.name && (
+                            <CustomerModal showModal={!!selectedProduct} itemDetails={selectedProduct} setShowModal={handleCloseModal} />
+                        )}
                     </div>
                 );
             })}
