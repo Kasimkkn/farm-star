@@ -27,7 +27,7 @@ const Header = () => {
                 <Link to="/" className="navbar-brand ms-4 ms-lg-0" style={{ width: '200px' }}>
                     <img src={logo} alt="Logo" className="w-100 h-100 object-fit-cover" />
                 </Link>
-                <h1 className='pure-for-sure'>Pure For Sure</h1>
+                <h1 className='pure-for-sure Capitalize'>Pure For Sure</h1>
                 <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span className="navbar-toggler-icon"></span>
