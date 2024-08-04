@@ -10,8 +10,6 @@ const ReviewFormModal = ({ show, onClose, onReviewAdded }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const newReview = { name, review, rating };
-        const { data, error } = await supabase.from('reviews').insert([newReview]);
-
         if (error) {
             console.error('Error adding review:', error);
 

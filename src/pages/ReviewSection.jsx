@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabase.js'; // Import your Supabase configuration
 import ReviewFormModal from '../components/ReviewModal/ReviewFormModal';
 import placeholderImage from '../img/user.png';
-
+import Loader from '../components/Loader.jsx';
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
 const ReviewsSection = () => {
     const [reviews, setReviews] = useState([]);
     const [showModal, setShowModal] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
+    const [loading, setLoading] = useState(false);
     const reviewsPerPage = 3;
 
     useEffect(() => {
@@ -22,11 +24,16 @@ const ReviewsSection = () => {
     }, []);
 
     const handleReviewAdded = async (newReview) => {
-        const { data, error } = await supabase.from('reviews').insert([newReview]);
-        if (error) {
-            console.error('Error adding review:', error);
-        } else {
-            setReviews([...reviews, ...data]);
+        try {
+            setLoading(true);
+            const { data, error } = await supabase.from('reviews').insert([newReview]);
+            if (error) {
+                console.error('Error adding review:', error);
+            } else {
+                setReviews([...reviews, ...data]);
+            }
+        } catch (error) {
+            console.log(error);
         }
     };
 
@@ -44,7 +51,7 @@ const ReviewsSection = () => {
     return (
         <div className="container-xxl py-5">
             <div className="container">
-                <div className='d-flex justify-content-between align-items-center'>
+                <div className='d-flex justify-content-between align-items-center mb-4'>
                     <h2 className='text-bold'>Customer Reviews</h2>
                     <button className='btn btn-primary text-dark' onClick={() => setShowModal(true)}>Add Yours</button>
                 </div>
@@ -56,7 +63,7 @@ const ReviewsSection = () => {
                                     <img src={placeholderImage} style={{ width: "30%", objectFit: "cover" }} alt="User" />
                                     <div className="card-body">
                                         <h5 className="card-title text-uppercase">{review.name}</h5>
-                                        <p className="card-text">{review.review}</p>
+                                        <p className="card-text">{review.review.substring(0, 170)}...</p>
                                         <p className="card-text">Rating: {review.rating} / 5</p>
                                     </div>
                                 </div>
@@ -68,10 +75,10 @@ const ReviewsSection = () => {
                 </div>
                 <div className="d-flex justify-content-between mt-4">
                     <button className="btn btn-secondary" onClick={handlePreviousPage} disabled={currentPage === 1}>
-                        Previous
+                        <IoIosArrowRoundBack />
                     </button>
                     <button className="btn btn-secondary" onClick={handleNextPage} disabled={currentPage === Math.ceil(reviews.length / reviewsPerPage)}>
-                        Next
+                        <IoIosArrowRoundForward />
                     </button>
                 </div>
             </div>

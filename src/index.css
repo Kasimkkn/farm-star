@@ -649,3 +649,7 @@ hr {
 .grid-item img:hover {
   transform: scale(1.2);
 }
+
+.btn-secondary:hover {
+  cursor: pointer;
+}
