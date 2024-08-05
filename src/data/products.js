@@ -7,8 +7,8 @@ import p6 from '../img/rock-salt.jpg';
 import p7 from '../img/Jaggery.png';
 
 export const products = [
-    { id: 1, name: 'Muliflora Honey 500gm', price: 349.00, oldPrice: 399.00, imgSrc: p1, quantity: 1 },
-    { id: 2, name: 'Muliflora Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p1, quantity: 1 },
+    { id: 1, name: 'Multiflora Honey 500gm', price: 349.00, oldPrice: 399.00, imgSrc: p1, quantity: 1 },
+    { id: 2, name: 'Multiflora Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p1, quantity: 1 },
     { id: 3, name: 'Litchi Honey 500gm', price: 349.00, oldPrice: 399.00, imgSrc: p2, quantity: 1 },
     { id: 4, name: 'Litchi Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p2, quantity: 1 },
     { id: 5, name: 'Wild Honey 250gm', price: 229.00, oldPrice: 249.00, imgSrc: p3, quantity: 1 },
