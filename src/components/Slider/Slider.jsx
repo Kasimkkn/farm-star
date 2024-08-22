@@ -4,10 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
-import slider1 from '../../img/slider-hon.jpg';
+import slider1 from '../../img/Farm star Honey Slider.jpg';
 import slider2 from '../../img/slider-ghee1.jpg';
-import slider3 from '../../img/slider-jag.jpg';
-import slider4 from '../../img/slider-salt1.jpg';
+import slider3 from '../../img/Farm star Desi Jaggery Slider.jpg';
+import slider4 from '../../img/Farm star Desi Khand Slider.jpg';
+import slider5 from '../../img/brown-sugar-slider.jpg';
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Slider = () => {
@@ -16,7 +17,8 @@ const Slider = () => {
         { img: slider1 },
         { img: slider2 },
         { img: slider3 },
-        { img: slider4 }
+        { img: slider4 },
+        { img: slider5 },
     ];
 
     return (
@@ -38,7 +40,7 @@ const Slider = () => {
             >
                 {sliderItems.map((item, index) => (
                     <SwiperSlide key={index} className='slide-content'>
-                        <img src={item.img} alt={item.title} />
+                        <img src={item.img} alt={item.title} className='slider-img' />
                     </SwiperSlide>
                 ))}
             </Swiper>

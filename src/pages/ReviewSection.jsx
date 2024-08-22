@@ -11,15 +11,16 @@ const ReviewsSection = () => {
     const [loading, setLoading] = useState(false);
     const reviewsPerPage = 3;
 
+
+    const fetchReviews = async () => {
+        const { data, error } = await supabase.from('reviews').select('*');
+        if (error) {
+            console.error('Error fetching reviews:', error);
+        } else {
+            setReviews(data);
+        }
+    };
     useEffect(() => {
-        const fetchReviews = async () => {
-            const { data, error } = await supabase.from('reviews').select('*');
-            if (error) {
-                console.error('Error fetching reviews:', error);
-            } else {
-                setReviews(data);
-            }
-        };
         fetchReviews();
     }, []);
 
@@ -32,6 +33,8 @@ const ReviewsSection = () => {
             } else {
                 setReviews([...reviews, ...data]);
             }
+            setLoading(false);
+            await fetchReviews();
         } catch (error) {
             console.log(error);
         }

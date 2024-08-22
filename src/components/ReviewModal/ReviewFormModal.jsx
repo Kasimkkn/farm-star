@@ -10,13 +10,8 @@ const ReviewFormModal = ({ show, onClose, onReviewAdded }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const newReview = { name, review, rating };
-        if (error) {
-            console.error('Error adding review:', error);
-
-        } else {
-            onReviewAdded(newReview);
-            onClose();
-        }
+        onReviewAdded(newReview);
+        onClose();
     };
 
     if (!show) return null;
