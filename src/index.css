@@ -158,16 +158,16 @@ img:hover {
   border-bottom: 1px solid rgba(0, 0, 0, .07);
 }
 
-.page-header {
+/* .page-header {
   padding-top: 12rem;
-  padding-bottom: 6rem;
-  background: url(./img/home-bg.jpg) top right no-repeat;
+  padding-bottom: 12rem;
+  background: url(./img/product-bg.jpg) top right no-repeat;
   background-size: cover;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
   color: #999999;
-}
+} */
 
 
 /*** Section Header ***/
@@ -660,4 +660,14 @@ hr {
 
 .btn-secondary:hover {
   cursor: pointer;
+}
+
+.prduct-container {
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .prduct-container {
+    margin-top: 3rem;
+  }
 }

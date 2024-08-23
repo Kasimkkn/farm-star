@@ -8,7 +8,7 @@ import slider1 from '../../img/Farm star Honey Slider.jpg';
 import slider2 from '../../img/slider-ghee1.jpg';
 import slider3 from '../../img/Farm star Desi Jaggery Slider.jpg';
 import slider4 from '../../img/Farm star Desi Khand Slider.jpg';
-import slider5 from '../../img/brown-sugar-slider.jpg';
+import slider5 from '../../img/rock-slat-slide.jpg';
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Slider = () => {
